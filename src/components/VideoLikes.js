@@ -2,13 +2,13 @@ import React, { useState } from "react"
 
 
 
-const VideoLikes = () => {
+const VideoLikes = ({upVotess, downVotess}) => {
 
 
 
-    const [upvotes, setUpvotes] = useState(9210)
+    const [upvotes, setUpvotes] = useState(upVotess)
     console.log(upvotes)
-    const [downvotes, setDownVotes] = useState(185)
+    const [downvotes, setDownVotes] = useState(downVotess)
 
     const handleLikes = () => {
         setUpvotes(upvotes +1)

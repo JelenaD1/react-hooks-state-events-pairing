@@ -14,14 +14,14 @@ function App() {
         width="919"
         height="525"
         src={video.embedUrl}
-        frameborder="0"
-        allowfullscreen
+        frameBorder="0"
+        allowFullScreen
         title="Thinking in React"
       />
 
       <Header />
       <VideoViews />
-      <VideoLikes />
+      <VideoLikes upVotess={video.upvotes} downVotess={video.downVotes} />
       <VideoComments
       />
 
